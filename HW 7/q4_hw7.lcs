@@ -1,0 +1,11 @@
+reset
+as 	lc3os.asm
+as 	hw7_q4.asm
+load 	lc3os.obj
+load 	hw7_q4.obj
+
+set	Loc1	xFF00
+break	set	STOP
+set pc x3000
+continue
+check Loc2 xC03F
